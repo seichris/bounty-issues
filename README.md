@@ -1,23 +1,28 @@
-**Let anyone crowfund dApp features.**
+**Fork this repo to collect and crowdfund user feedback**
 
-There are 3 steps:
+---
 
-1. A developer sets a funding goal for an issue,
-2. A funder funds the issue,
-3. The dev builds the feature and collects the bounty.
+**User flow:**
 
-**Tech we need:**
+1. A user opens a feature request issue,
+2. A developer sets a funding goal for the issue,
+3. A funder funds the issue,
+4. The dev builds the feature and collects the bounty.
 
-- **a github action (python)**, turning github issues into a neat website (we can modify [this existing script](https://github.com/mattduck/gh2md/issues/13))
-- an escrow **smart contract**
-- a service that watches the escrow contract
-- a PR bot that shows the funding/transaction status (similar to [this trust wallet bot](https://github.com/trustwallet/assets/pull/4896))
-- optional: **a chrome extension** that updates the funding UI on github (and collect feedback in the dApp, or on Twitter):
+**v1 features for [ETHglobal hackathon](https://marketmake.ethglobal.co/)**
+
+- a github action, turning github issues into json files ([#1](https://github.com/seichris/bounty-issues/issues/1))
+- a website, listing all issues (([#2](https://github.com/seichris/bounty-issues/issues/2)))
+- an escrow smart contract (([#3](https://github.com/seichris/bounty-issues/issues/3)))
+- a service that watches the escrow contract (([#4](https://github.com/seichris/bounty-issues/issues/4)))
+- a comment bot that shows the funding status (([#5](https://github.com/seichris/bounty-issues/issues/5)))
+
+**v2 for the glorious future**
+
+- a chrome extension that updates the funding UI on github (and collect feedback in the dApp, or on Twitter) (([#6](https://github.com/seichris/bounty-issues/issues/6)))
+- 
+
 
 ![image](https://i.imgur.com/5bVkDLq.jpg)
 
 ![image](https://i.imgur.com/7Tt0VQm.png)
-
-See the user flow [in this Figma board](https://www.figma.com/file/HG3SMVhTwfLUeIU04UoXDg/better.kontext.app-bounty-user-feedback?node-id=0%3A1):
-![user flow](https://i.imgur.com/8NzUKOh.png)
-
