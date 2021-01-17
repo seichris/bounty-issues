@@ -19,8 +19,10 @@ const Post = (props) => {
               <div className="subdomainHomeContents">
                  <div className="topContainer">
                  {/* still broken */}
-                  <h1>{props.issue.title}</h1>
-                  <h3>{props.issue.description}</h3>
+                  {/*<h1>{props.issue.title}</h1>
+                  <h3>{props.issue.description}</h3>*/}
+                  <h1>asd</h1>
+                  <h3>asd</h3>
                   </div>
                   <div className="bottomContainer">
                      <div className="cannyAttribution"><a href="https://canny.io/powered-by-canny" rel="noopener" target="_blank" className="attribution">Inspired&nbsp;by&nbsp;Canny</a></div>
