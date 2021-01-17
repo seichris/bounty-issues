@@ -20,7 +20,9 @@
 **v2 for the glorious future**
 
 - a chrome extension that updates the funding UI on github (and collect feedback in the dApp, or on Twitter) (([#6](https://github.com/seichris/bounty-issues/issues/6)))
-- 
+- map ETH addresses to gh names (([#7](https://github.com/seichris/bounty-issues/issues/7)))
+- a landing page (([#8](https://github.com/seichris/bounty-issues/issues/8)))
+- a DAO (([#9](https://github.com/seichris/bounty-issues/issues/9)))
 
 
 ![image](https://i.imgur.com/5bVkDLq.jpg)
