@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Navbar from "../components/navbar"
-import Post from "../components/Post"
+//import Post from "../components/Post"
 import IssuesProposed from "../components/IssuesProposed"
 import IssuesFunding from "../components/IssuesFunding"
 import IssuesBuilding from "../components/IssuesBuilding"
