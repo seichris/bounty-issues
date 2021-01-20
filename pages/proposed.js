@@ -41,7 +41,7 @@ function Proposed() {
                                 </div>
                              </div>
                              <div className="posts">
-                               {AllIssues.map((blog, i) => (
+                               {AllIssues.issues.map((blog, i) => (
                                  blog.state == "proposed" &&
                                   <div className="postListItem">
                                     <div className="postVotes">

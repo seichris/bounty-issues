@@ -41,7 +41,7 @@ function TranslationRequests() {
                                 </div>
                              </div>
                              <div className="posts">
-                               {AllIssues.map((blog, i) => (
+                               {AllIssues.issues.map((blog, i) => (
                                  blog.category == "feature" &&
                                   <div className="postListItem">
                                     <div className="postVotes">

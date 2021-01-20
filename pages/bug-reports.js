@@ -41,7 +41,7 @@ function BugReports() {
                                 </div>
                              </div>
                              <div className="posts">
-                               {AllIssues.map((blog, i) => (
+                               {AllIssues.issues.map((blog, i) => (
                                  blog.category == "bug" &&
                                   <div className="postListItem">
                                     <div className="postVotes">
@@ -63,9 +63,10 @@ function BugReports() {
                                             }
 
                                           </div>
-                                          <div className="postDetails">
-                                             <div className="truncate">
-                                                <div className="line">{blog.description}</div>
+                                          {/* left of here */}
+                                          <div className="text-sm leading-5 break-words overflow-hidden max-h-11 mt-2">
+                                             <div className="overflow-ellipsis">
+                                                <div className="">{blog.description}</div>
                                              </div>
                                           </div>
                                        </div>
@@ -80,13 +81,11 @@ function BugReports() {
 
 
                              </div>
-                             <div className="postListLoadMore">
-                                Load More
-                                <div className="arrow">→</div>
+                             <div className="flex justify-between items-center text-base cursor-pointer text-indigo-600 select-none">
+                                → Load More
                              </div>
                           </div>
                        </div>
-                       <div className="cannyAttribution mobileOnly"><a href="https://canny.io/powered-by-canny?utm_source=feedback_subdomain&amp;utm_medium=powered&amp;utm_campaign=raindropio&amp;company=Raindrop.io" rel="noopener" target="_blank" className="attribution">Powered&nbsp;by&nbsp;Canny</a></div>
                     </div>
                  </div>
               </div>

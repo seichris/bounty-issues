@@ -41,7 +41,7 @@ function Funding() {
                                 </div>
                              </div>
                              <div className="posts">
-                               {AllIssues.map((blog, i) => (
+                               {AllIssues.issues.map((blog, i) => (
                                  blog.state == "funding" &&
                                   <div className="postListItem">
                                     <div className="postVotes">

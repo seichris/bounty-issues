@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Navbar from "../components/navbar"
-
 import Post from "../components/Post"
 import IssuesProposed from "../components/IssuesProposed"
 import IssuesFunding from "../components/IssuesFunding"
@@ -18,8 +17,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="publicContainer">
-        <div className="publicNav">
+      <div className="flex flex-col min-h-screen box-border min-w-full pb-10">
+        <div className="publicNav w-full bg-white border-b border-gray-200 mb-32">
           <div className="contentContainer">
             <div className="contentInnerContainer">
               <Navbar />
@@ -63,6 +62,13 @@ export default function Home() {
                   <div className="roadmapView">
                      <div className="header">Roadmap</div>
                      <div className="roadmapColumns">
+
+
+                    {/* circle through all issues.json */}
+
+
+
+
                      <div className="roadmapColumn">
                        <a href="/proposed">
                           <div className="columnHeader">
@@ -74,7 +80,7 @@ export default function Home() {
                            <div className="postList">
                               <div className="topContainer"></div>
                               <div className="posts">
-                                 <IssuesProposed issues={AllIssues}/>
+                                 <IssuesProposed issues={AllIssues.issues}/>
                                </div>
                              </div>
                            <div className="roadmapLoadMore"></div>
@@ -94,7 +100,7 @@ export default function Home() {
                               <div className="postList">
                                  <div className="topContainer"></div>
                                  <div className="posts">
-                                   <IssuesFunding issues={AllIssues}/>
+                                   <IssuesFunding issues={AllIssues.issues}/>
                                  </div>
                               </div>
                               <div className="roadmapLoadMore"></div>
@@ -111,7 +117,7 @@ export default function Home() {
                               <div className="postList">
                                  <div className="topContainer"></div>
                                  <div className="posts">
-                                   <IssuesBuilding issues={AllIssues}/>
+                                   <IssuesBuilding issues={AllIssues.issues}/>
                                  </div>
                               </div>
                               <div className="roadmapLoadMore"></div>
