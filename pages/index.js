@@ -121,7 +121,7 @@ export default function Home() {
                   </div>
                </div>
                <div className="bottomContainer">
-                <div className="cannyAttribution"><a href="https://github.com/seichris/issues-to-website/issues" rel="noopener" target="_blank" className="attribution">Add issues at https://github.com/seichris/bounty-issues</a></div>
+                <div className="cannyAttribution"><a href="https://github.com/seichris/bounty-issues" rel="noopener" target="_blank" className="attribution">Add issues at https://github.com/seichris/bounty-issues</a></div>
                 <div className="cannyAttribution"><a href="https://canny.io/powered-by-canny" rel="noopener" target="_blank" className="attribution">Inspired&nbsp;by&nbsp;Canny</a></div>
                </div>
             </div>
