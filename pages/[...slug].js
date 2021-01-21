@@ -6,26 +6,26 @@ const Post = ({issue}) => {
 
   return (
     <>
-      <div className="publicContainer">
-        <div className="publicNav">
-          <div className="contentContainer">
-            <div className="contentInnerContainer">
+      <div className="flex flex-col min-h-screen min-w-full">
+        <div className="w-full border border-b border-solid border-gray-200 mb-8">
+          <div className="flex flex-col items-center w-full">
+            <div className="w-full max-w-5xl">
               <Navbar />
             </div>
           </div>
         </div>
-        <div className="subdomainHome">
-          <div className="contentContainer">
-            <div className="contentInnerContainer">
-              <div className="subdomainHomeContents">
-                 <div className="topContainer">
+        <div className="flex flex-1">
+          <div className="flex flex-col items-center w-full">
+            <div className="flex flex-col flex-1 max-w-5xl">
+              <div className="flex flex-col flex-1 justify-between">
+                 <div className="flex flex-col">
                   <h1>{issue.title}</h1>
                   <h3>{issue.description}</h3>
                   {/* gh action could convert .md to html. what about security?
                     <div dangerouslySetInnerHTML={{__html: issue.content}}></div>*/}
                   </div>
-                  <div className="bottomContainer">
-                     <div className="cannyAttribution"><a href="https://canny.io/powered-by-canny" rel="noopener" target="_blank" className="attribution">Inspired&nbsp;by&nbsp;Canny</a></div>
+                  <div>
+                     <div className="flex flex-row justify-center"><a href="https://canny.io/powered-by-canny" rel="noopener" target="_blank" className="text-gray-400 hover:text-gray-500 text-xs p-4">Inspired&nbsp;by&nbsp;Canny</a></div>
                   </div>
                </div>
              </div>

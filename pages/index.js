@@ -17,118 +17,85 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="flex flex-col min-h-screen box-border min-w-full pb-10">
-        <div className="publicNav w-full bg-white border-b border-gray-200 mb-32">
-          <div className="contentContainer">
-            <div className="contentInnerContainer">
+      <div className="flex flex-col min-h-screen min-w-full">
+        <div className="w-full border border-b border-solid border-gray-200 mb-8">
+          <div className="flex flex-col items-center w-full">
+            <div className="w-full max-w-5xl">
               <Navbar />
             </div>
           </div>
         </div>
-          <div className="subdomainHome">
-          <div className="contentContainer">
-          <div className="contentInnerContainer">
-            <div className="subdomainHomeContents">
-               <div className="topContainer">
-                  {/*<div className="boardGridContainer">
-                     <div className="header">Give Feedback</div>
-                     <div className="boardGrid">
-                        <a className="boardGridItem" href="/feature-requests">
-                           <div className="top">
-                              <div className="name">Feature request</div>
-                              <div className="uppercaseHeader posts">428</div>
-                           </div>
-                        </a>
-                        <a className="boardGridItem" href="/bugs">
-                           <div className="top">
-                              <div className="name">Bug report</div>
-                              <div className="uppercaseHeader posts">65</div>
-                           </div>
-                        </a>
-                        <a className="boardGridItem" href="/languages">
-                           <div className="top">
-                              <div className="name">Translation</div>
-                              <div className="uppercaseHeader posts">10</div>
-                           </div>
-                        </a>
-                        <a className="boardGridItem" href="/integrations">
-                           <div className="top">
-                              <div className="name">Integration</div>
-                              <div className="uppercaseHeader posts">44</div>
-                           </div>
-                        </a>
-                     </div>
-                  </div>*/}
-                  <div className="roadmapView">
-                     <div className="header">Roadmap</div>
-                     <div className="roadmapColumns">
+          <div className="flex flex-1">
+          <div className="flex flex-col items-center w-full">
+          <div className="flex flex-col flex-1 w-full max-w-5xl">
+            <div className="flex flex-col flex-1 justify-between">
+               <div className="flex flex-col flex-1">
+                  <div className="flex flex-col flex-1 ">
+                     <div className="text-gray-400 font-semibold mt-5 mr-0 mb-3 ml-4">Roadmap</div>
+                     <div className="justify-between items-start flex-1 flex">
 
+                    {/* should circle through all issues.json */}
 
-                    {/* circle through all issues.json */}
-
-
-
-
-                     <div className="roadmapColumn">
+                     <div className="relative min-h-full w-1/3 overflow-hidden rounded-md box-border mx-1">
                        <a href="/proposed">
-                          <div className="columnHeader">
-                             <div className="dot underReview"></div>
+                          <div className="flex items-center absolute top-0 left-0 right-0 font-semibold p-4 bg-gray-100 box-border rounded z-10">
+                             <div className="bg-gray-500 w-2 h-2 mr-2 rounded-full"></div>
                              <div>Proposed Features</div>
                           </div>
                         </a>
-                        <div className="scrollContainer scrollable">
-                           <div className="postList">
-                              <div className="topContainer"></div>
-                              <div className="posts">
+                        <div className="shadow-inner pb-7 px-4 pt-4 absolute w-full max-h-full overflow-y-auto mt-4 bg-gray-100 rounded-md box-border">
+                           <div className="flex flex-col">
+                              <div className="flex flex-col flex-1"></div>
+                                <div>
                                  <IssuesProposed issues={AllIssues.issues}/>
                                </div>
                              </div>
-                           <div className="roadmapLoadMore"></div>
+                           <div className="loadMore"></div>
                          </div>
                        </div>
 
 
 
-                        <div className="roadmapColumn">
+                        <div className="relative min-h-full w-1/3 overflow-hidden rounded-md box-border mx-1">
                           <a href="/funding">
-                             <div className="columnHeader">
-                                <div className="dot planned"></div>
+                             <div className="flex items-center absolute top-0 left-0 right-0 font-semibold p-4 bg-gray-100 box-border rounded z-10">
+                                <div className="bg-blue-500 w-2 h-2 mr-2 rounded-full"></div>
                                 <div>Features in Funding</div>
                              </div>
                            </a>
-                           <div className="scrollContainer scrollable">
-                              <div className="postList">
-                                 <div className="topContainer"></div>
-                                 <div className="posts">
+                           <div className="shadow-inner pb-7 px-4 pt-4 absolute w-full max-h-full overflow-y-auto mt-4 bg-gray-100 rounded-md box-border">
+                              <div className="flex flex-col">
+                                 <div className="flex flex-col flex-1"></div>
+                                  <div>
                                    <IssuesFunding issues={AllIssues.issues}/>
                                  </div>
                               </div>
-                              <div className="roadmapLoadMore"></div>
+                              <div className="loadMore"></div>
                            </div>
                         </div>
-                        <div className="roadmapColumn">
+                        <div className="relative min-h-full w-1/3 overflow-hidden rounded-md box-border mx-1">
                           <a href="/building">
-                             <div className="columnHeader">
-                                <div className="dot inProgress"></div>
+                             <div className="flex items-center absolute top-0 left-0 right-0 font-semibold p-4 bg-gray-100 box-border rounded z-10">
+                                <div className="bg-purple-400 w-2 h-2 mr-2 rounded-full"></div>
                                 <div>In Progress</div>
                              </div>
                            </a>
-                           <div className="scrollContainer scrollable">
-                              <div className="postList">
-                                 <div className="topContainer"></div>
-                                 <div className="posts">
+                           <div className="shadow-inner pb-7 px-4 pt-4 absolute w-full max-h-full overflow-y-auto mt-4 bg-gray-100 rounded-md box-border">
+                              <div className="flex flex-col">
+                                 <div className="flex flex-col flex-1"></div>
+                                 <div>
                                    <IssuesBuilding issues={AllIssues.issues}/>
                                  </div>
                               </div>
-                              <div className="roadmapLoadMore"></div>
+                              <div className="loadMore"></div>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
-               <div className="bottomContainer">
-                <div className="cannyAttribution"><a href="https://github.com/seichris/bounty-issues" rel="noopener" target="_blank" className="attribution">Add issues at https://github.com/seichris/bounty-issues</a></div>
-                <div className="cannyAttribution"><a href="https://canny.io/powered-by-canny" rel="noopener" target="_blank" className="attribution">Inspired&nbsp;by&nbsp;Canny</a></div>
+               <div>
+                <div className="flex flex-row justify-center"><a href="https://github.com/seichris/bounty-issues" rel="noopener" target="_blank" className="text-gray-400 hover:text-gray-500 text-xs p-4">Add issues at https://github.com/seichris/bounty-issues</a></div>
+                <div className="flex flex-row justify-center"><a href="https://canny.io/powered-by-canny" rel="noopener" target="_blank" className="text-gray-400 hover:text-gray-500 text-xs p-4">Inspired&nbsp;by&nbsp;Canny</a></div>
                </div>
             </div>
           </div>
