@@ -22,7 +22,7 @@
       },
       {
           "slug": "3",
-          "path": "/issue3",
+          "path": "/3",
           "title": "Solve this bug",
           "date": "2-7-2021",
           "category": "bug",
@@ -32,7 +32,7 @@
       },
       {
           "slug": "4",
-          "path": "/issue4",
+          "path": "/4",
           "title": "Solve this bug",
           "date": "2-7-2021",
           "category": "bug",
@@ -42,7 +42,7 @@
       },
       {
           "slug": "5",
-          "path": "/issue5",
+          "path": "/5",
           "title": "Solve this bug",
           "date": "2-7-2021",
           "category": "bug",
@@ -52,7 +52,7 @@
       },
       {
           "slug": "6",
-          "path": "/issue6",
+          "path": "/6",
           "title": "Solve this bug",
           "date": "2-7-2021",
           "category": "bug",
@@ -62,7 +62,7 @@
       },
       {
           "slug": "7",
-          "path": "/issue7",
+          "path": "/7",
           "title": "Solve this bug",
           "date": "2-7-2021",
           "category": "bug",
@@ -72,7 +72,7 @@
       },
       {
           "slug": "8",
-          "path": "/issue8",
+          "path": "/8",
           "title": "Solve this bug",
           "date": "2-7-2021",
           "category": "bug",
@@ -82,7 +82,7 @@
       },
       {
           "slug": "9",
-          "path": "/issue9",
+          "path": "/9",
           "title": "Solve this bug",
           "date": "2-7-2021",
           "category": "bug",
