@@ -3,7 +3,12 @@ import Navbar from "../components/navbar"
 import issues from "../components/issues.json"
 
 const Post = ({issue}) => {
-
+  if (!issue) {
+      // fix Next bug while building
+      // "Error occurred prerendering page "/[...slug]". Read more: https://err.sh/next.js/prerender-error"
+      // https://github.com/vercel/next.js/issues/12846
+      return null;
+    }
   return (
     <>
       <div className="flex flex-col min-h-screen min-w-full">
