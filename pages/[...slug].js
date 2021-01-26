@@ -28,6 +28,7 @@ const Post = ({issue}) => {
                   <h3>{issue.description}</h3>
                   {/* gh action could convert .md to html. what about security?
                     <div dangerouslySetInnerHTML={{__html: issue.content}}></div>*/}
+                  <div className="mt-4 bg-gray-200 hover:bg-gray-300 rounded p-2 max-w-xs text-center">fund this issue</div>
                   </div>
                   <div>
                      <div className="flex flex-row justify-center"><a href="https://canny.io/powered-by-canny" rel="noopener" target="_blank" className="text-gray-400 hover:text-gray-500 text-xs p-4">Inspired&nbsp;by&nbsp;Canny</a></div>

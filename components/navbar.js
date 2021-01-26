@@ -1,6 +1,29 @@
 import React from "react";
+import {useEffect, useState} from "react";
+import Link from 'next/link';
+//import wallet from '../scripts/wallet.ts';
+import dynamic from 'next/dynamic';
+
+  const web3 = dynamic(
+    () => import('../scripts/web3.ts'),
+    { ssr: false }
+  )
+
+  const {web3Loading, getweb3} = web3();
 
 function Navbar() {
+
+  const [myWeb3, setMyWeb3] = useState();
+
+  async function connectWallet() {
+    await getweb3().then((response) => {
+        setMyWeb3(response);
+        response.eth.getAccounts().then((result) => {
+        console.log(result)
+        });
+      });
+  };
+
   return (
     <div className="flex flex-col items-stretch justify-between">
        <div className="flex justify-between h-16">
@@ -13,6 +36,7 @@ function Navbar() {
           <div className="flex items-center">
              <div className="self-stretch flex flex-col items-stretch font-bold text-sm leading-5 border-b hover:opacity-80">
                 <div className="uppercase font-bold text-xs text-gray-400 cursor-pointer hover:text-gray-600 p-2">Log&nbsp;in&nbsp;/&nbsp;Sign&nbsp;up</div>
+                {web3Loading? <button className="btn-inner-text" disabled> Loading ... </button>: <button className =" btn-inner - text "onClick = {connectWallet}>get accounts</button>}
              </div>
           </div>
        </div>
